@@ -42,8 +42,8 @@ class Badges extends React.Component
       }
     render(){
         return (
+            <React.Fragment>
             <div>
-                <Navbar />
                 <div className="Badges">
                     <div className="Badges__hero">
                         <div className="Badges__container">
@@ -72,6 +72,7 @@ class Badges extends React.Component
                     </div>
                 </div>
             </div>
+            </React.Fragment>
         );
     }
 }
