@@ -32,18 +32,18 @@ class BadgeNew extends React.Component {
             <React.Fragment>
             <div>
                 <div className="BadgeNew__hero">
-                    <img className="img-fluid" src={header} alt="logo"/>
+                    <img className="BadgeNew__hero-image img-fluid" src={header} alt="logo"/>
                 </div>
 
                 <div className="container">
                     <div className="row">
                         <div className="col-6">
                             <Badge 
-                                firstName={this.state.form.firstName}
-                                lastName={this.state.form.lastName}
-                                twitter={this.state.form.twitter}
-                                jobTitle={this.state.form.jobTitle}
-                                email={this.state.form.email}
+                                firstName={this.state.form.firstName || 'FIRST_NAME'}
+                                lastName={this.state.form.lastName || 'LAST_NAME'}
+                                twitter={this.state.form.twitter || 'TWITTER'}
+                                jobTitle={this.state.form.jobTitle || 'JOB_TITLE'}
+                                email={this.state.form.email || 'EMAIL'}
                                 avatarUrl="https://www.crearlogogratisonline.com/images/crearlogogratis_1024x1024_01.png"
                             />
                         </div>
