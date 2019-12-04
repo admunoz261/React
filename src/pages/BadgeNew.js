@@ -1,7 +1,7 @@
 import React from 'react';
 // jAJAJAJJAJAJA no sabras donde esta el autor 
 import './styles/BadgeNew.css'
-import header from '../images/badge-header.svg'
+import header from '../images/platziconf-logo.svg'
 import BadgeForm from '../components/BadgeForm'
 import Badge from '../components/Badge'
 
