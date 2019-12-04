@@ -4,6 +4,7 @@ import './styles/BadgeNew.css'
 import header from '../images/platziconf-logo.svg'
 import BadgeForm from '../components/BadgeForm'
 import Badge from '../components/Badge'
+import api from '../api'
 
 
 class BadgeNew extends React.Component {
@@ -25,6 +26,18 @@ class BadgeNew extends React.Component {
                 [e.target.name]: e.target.value,
             }
         })
+    }
+
+    handleSubmit = async e => {
+        e.preventDefault();
+        this.setState({ loading: true, error: null })
+
+        try {
+            await api.badges.create(this.state.form)
+            this.setState({ loading: false })
+        }catch(error){
+            this.setState({ loading: false, error: error })
+        }
     }
 
     render(){
@@ -50,6 +63,7 @@ class BadgeNew extends React.Component {
                         <div className="col-6">
                             <BadgeForm 
                                 onChange={this.handleChange}
+                                onSubmit={this.handleSubmit}
                                 formValues={this.state.form}
                             />
                         </div>
