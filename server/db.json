@@ -1,20 +1,12 @@
 {
   "badges": [
     {
-      "firstName": "Richard",
-      "lastName": "Kaufman",
-      "email": "richardbkaufman@gmail.com",
-      "jobTitle": "Frontend Engineer",
-      "twitter": "sparragus",
-      "id": "DbY1vXd"
-    },
-    {
-      "firstName": "Alejandro",
-      "lastName": "Muñoz",
-      "email": "bichidroid@gmail.com",
-      "jobTitle": "Youtuber y Programador",
-      "twitter": "bichidroid",
-      "id": "HBwURDD"
+      "firstName": "asd",
+      "lastName": "asd",
+      "email": "asd@gmail.com",
+      "jobTitle": "asd",
+      "twitter": "asd",
+      "id": 1
     }
   ]
 }
